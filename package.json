@@ -1,0 +1,22 @@
+{
+  "name": "sports-sims",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:nfl": "npm run dev --workspace=apps/nfl-sim",
+    "dev:mma": "npm run dev --workspace=apps/mma-sim",
+    "build:nfl": "npm run build --workspace=apps/nfl-sim",
+    "build:mma": "npm run build --workspace=apps/mma-sim",
+    "dev:all": "concurrently \"npm run dev:nfl\" \"npm run dev:mma\"",
+    "lint": "npm run lint --workspaces",
+    "db:generate": "npm run generate --workspace=packages/database",
+    "db:migrate": "npm run migrate --workspace=packages/database"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Documentation
+README.md
+DEPLOYMENT.md
+PROJECT_SUMMARY.md
+*.md
+
+# Scripts
+setup.sh
+deploy.sh
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log
