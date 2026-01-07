@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd ../.. && npm install && npm run build:nfl",
+  "buildCommand": "cd ../.. && npm run build:nfl",
   "outputDirectory": "apps/nfl-sim/.next",
   "installCommand": "cd ../.. && npm install"
 }
